@@ -1,3 +1,10 @@
+"""
+Created on Wed Nov 29 16:10:02 2017
+
+Author: Yiyang Wang, Yulu Qian
+
+"""
+
 from Transaction import Transaction
 from Variables import Variable
 

@@ -1,3 +1,10 @@
+"""
+Created on Wed Nov 29 16:10:02 2017
+
+Author: Yiyang Wang, Yulu Qian
+
+"""
+
 from Variables import Variable
 from Transaction import Transaction
 from Lock import Lock
@@ -152,11 +159,10 @@ class TransactionManager:
             self.retry_waiting()
 
             print(tid, 'ended')
-            """
             self.clean_wg(tid)
             del self.t_sites[tid]
             del self.transactions[tid]
-            """
+
 
 
     def assignsite(self, vid):

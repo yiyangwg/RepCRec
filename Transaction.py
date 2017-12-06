@@ -1,4 +1,14 @@
+"""
+Created on Tue Nov 28 10:09:19 2017
+
+Author: Yiyang Wang, Yulu Qian
+
+"""
+
 class Transaction:
+    """
+    This class is a implementation of a transaction
+    """
     def __init__(self, tid, timestamp, readonly, status):
         self.tid = tid
         self.timestamp = timestamp

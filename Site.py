@@ -1,3 +1,10 @@
+"""
+Created on Wed Nov 29 16:10:02 2017
+
+Author: Yiyang Wang, Yulu Qian
+
+"""
+
 from Transaction import Transaction
 from Variables import Variable
 from Lock import Lock
@@ -79,6 +86,6 @@ class Site:
     def recover(self):
         if not self.is_active():
             for vid in self.variables.keys():
-                if self.variables[vid].is_odd() == 0:
+                if self.variables[vid].is_replicated():
                     self.variables[vid].recover()
             self.status = 0

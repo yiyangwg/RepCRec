@@ -1,3 +1,10 @@
+"""
+Created on Wed Nov 29 16:10:02 2017
+
+Author: Yiyang Wang, Yulu Qian
+
+"""
+
 class Operation:
     def __init__(self, type, tid, vid=None, val=None):
         self.type = type

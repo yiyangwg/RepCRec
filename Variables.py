@@ -1,15 +1,25 @@
+"""
+Created on Wed Nov 29 16:10:02 2017
+
+Author: Yiyang Wang, Yulu Qian
+
+"""
+
 import Transaction
 
 class Variable:
+    """
+    This class contains functions
+    """
     def __init__(self, vid):
         self.vid = 'x' + str(vid)
-        self.isodd = vid % 2
+        self.replicated = (vid % 2 == 0)
         self.status = 0  # active = 0, recovering = 1
         self.commitvalues = [(0, vid * 10)]
         self.uncommit = None
 
-    def is_odd(self):
-        return self.isodd
+    def is_replicated(self):
+        return self.replicated
 
     def recover(self):
         self.status = 1
